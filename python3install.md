@@ -17,5 +17,10 @@ tar -zxvf Python-3.7.4.tgz
 
 编译安装Python3.7
 ```
+cd /root/Python-3.7.4
+./configure prefix=/usr/local/python3
 
+./configure prefix=/usr/local/python3 --enable-optimizations 对性能有10%的优化，但是会增加编译时间
+
+make && make install
 ```
